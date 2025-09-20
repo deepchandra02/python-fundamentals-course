@@ -1,5 +1,11 @@
+---
+marp: true
+---
+
 # Module 13: Modules & Advanced Features 🚀
+
 ## Professional Calculator with Scientific Functions
+
 **Duration: 6 minutes | Time: 1:38-1:44**
 
 ---
@@ -7,12 +13,14 @@
 ## What Are Modules? 📚
 
 ### Think of Modules as...
+
 - 📖 **Library books** - specialized knowledge you can borrow
 - 🧰 **Toolbox** - specialized tools for specific jobs
 - 🏪 **Store** - go there when you need specific items
 - 🔬 **Lab equipment** - advanced tools for complex tasks
 
 ### Why Use Modules?
+
 - **Don't reinvent the wheel** - use existing solutions
 - **Access advanced features** - beyond basic Python
 - **Professional development** - leverage expert code
@@ -23,6 +31,7 @@
 ## The `import` Statement 📥
 
 ### Basic Import Syntax
+
 ```python
 import math
 
@@ -32,6 +41,7 @@ pi_value = math.pi          # 3.141592653589793
 ```
 
 ### Different Import Styles
+
 ```python
 # Import entire module
 import math
@@ -55,6 +65,7 @@ radius = sqrt(area / pi)  # Can cause naming conflicts!
 ## The Math Module: Calculator's Best Friend 🧮
 
 ### Basic Math Functions
+
 ```python
 import math
 
@@ -75,6 +86,7 @@ math.floor(4.8)       # 4 - round down
 ```
 
 ### Trigonometric Functions
+
 ```python
 import math
 
@@ -92,6 +104,7 @@ result_degrees = math.degrees(result_radians)  # 30.0
 ```
 
 ### Mathematical Constants
+
 ```python
 import math
 
@@ -107,6 +120,7 @@ math.nan     # Not a Number
 ## 🔨 Live Coding: Calculator v4.0 FINAL
 
 ### Scientific Calculator Features!
+
 ```python
 import math
 
@@ -147,11 +161,13 @@ def calculate_bmi():
 ## Lambda Functions: Quick Functions 🏃‍♂️
 
 ### What Are Lambda Functions?
+
 - **Anonymous functions** - functions without names
 - **One-line functions** - for simple operations
 - **Perfect for** dictionary values, sorting, filtering
 
 ### Lambda Syntax
+
 ```python
 # Regular function
 def square(x):
@@ -171,6 +187,7 @@ result = operations["sqrt"](25)  # 5.0
 ```
 
 ### Practical Uses
+
 ```python
 # Sort by second element of tuple
 points = [(1, 5), (3, 2), (2, 8)]
@@ -188,6 +205,7 @@ evens = list(filter(lambda x: x % 2 == 0, numbers))
 ## String Formatting: Professional Output ✨
 
 ### F-String Advanced Formatting
+
 ```python
 import math
 
@@ -214,6 +232,7 @@ print(f"Center: '{number:^10.2f}'")        # ' 1234.57  '
 ```
 
 ### Professional Result Formatting
+
 ```python
 def format_result(num1, op, num2, result):
     """Professional result formatting"""
@@ -233,6 +252,7 @@ print(format_result(1234.5, "+", 567.8, 1802.3))
 ## What We Just Built 🎉
 
 ### Complete Calculator Features
+
 - ✅ **Scientific functions** (√, sin, log, e^x)
 - ✅ **BMI calculator** with health categories
 - ✅ **Professional formatting** with thousands separators
@@ -240,6 +260,7 @@ print(format_result(1234.5, "+", 567.8, 1802.3))
 - ✅ **Math module integration** for advanced calculations
 
 ### From Hello World to Professional App
+
 - **Started**: Simple print statement
 - **Ended**: Feature-rich scientific calculator
 - **Learned**: All fundamental Python concepts
@@ -250,11 +271,13 @@ print(format_result(1234.5, "+", 567.8, 1802.3))
 ## Quick Exercise (1 minute) ⚡
 
 ### Your Turn!
+
 1. **Add cosine and tangent** functions
 2. **Add more constants** like math.pi and math.e
 3. **Create temperature converter** function
 
 ### Challenge: Temperature Converter
+
 ```python
 def temperature_converter():
     print("🌡️ TEMPERATURE CONVERTER")
@@ -277,6 +300,7 @@ def temperature_converter():
 ## Other Useful Modules 📦
 
 ### Standard Library Modules
+
 ```python
 # Random numbers
 import random
@@ -294,6 +318,7 @@ current_directory = os.getcwd()
 ```
 
 ### Third-Party Modules (pip install)
+
 ```python
 # Data analysis
 import pandas as pd
@@ -313,6 +338,7 @@ import tkinter
 ## Code Organization Best Practices 🏗️
 
 ### Organizing Imports
+
 ```python
 # Standard library imports first
 import math
@@ -329,6 +355,7 @@ from my_calculator.utils import format_result
 ```
 
 ### Creating Your Own Modules
+
 ```python
 # File: calculator_utils.py
 def safe_float_input(prompt):
@@ -353,6 +380,7 @@ print(format_currency(amount))
 ## Professional Touches 💎
 
 ### Application Header
+
 ```python
 def display_banner():
     print("=" * 60)
@@ -369,6 +397,7 @@ def display_credits():
 ```
 
 ### Help System
+
 ```python
 def show_help():
     print("""
@@ -394,6 +423,7 @@ def show_help():
 ## Key Takeaways 📚
 
 ### What You Learned
+
 - ✅ **import statement** brings in external modules
 - ✅ **math module** provides scientific functions
 - ✅ **lambda functions** for quick anonymous functions
@@ -401,7 +431,9 @@ def show_help():
 - ✅ **Code organization** and professional structure
 
 ### Your Achievement 🏆
+
 You've built a **complete, professional calculator** with:
+
 - Interactive menu system
 - Error handling and validation
 - Scientific functions
@@ -414,12 +446,14 @@ You've built a **complete, professional calculator** with:
 ## What's Next? 🚀
 
 ### Immediate Extensions
+
 - **GUI version** with tkinter
 - **Web calculator** with Flask
 - **Mobile app** concepts
 - **Database storage** for history
 
 ### Python Learning Path
+
 - **Object-Oriented Programming** - classes and objects
 - **Web Development** - Flask, Django
 - **Data Science** - pandas, numpy, matplotlib
@@ -427,6 +461,7 @@ You've built a **complete, professional calculator** with:
 - **Machine Learning** - TensorFlow, scikit-learn
 
 ### Congratulations! 🎉
+
 You've mastered Python fundamentals and built something amazing!
 
 **Your journey in programming has just begun! 💪**

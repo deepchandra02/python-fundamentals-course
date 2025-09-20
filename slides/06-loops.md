@@ -1,5 +1,11 @@
+---
+marp: true
+---
+
 # Module 6: Loop Power 🔄
+
 ## Repeating Actions with While Loops
+
 **Duration: 8 minutes | Time: 0:55-1:03**
 
 ---
@@ -7,6 +13,7 @@
 ## Why Loops Matter 🎯
 
 ### Without Loops (Repetitive Code)
+
 ```python
 print("Welcome to Calculator!")
 # User calculates once and program ends
@@ -18,6 +25,7 @@ print("Thanks for using calculator!")
 ```
 
 ### With Loops (Smart Repetition)
+
 ```python
 print("Welcome to Calculator!")
 while user_wants_to_continue:
@@ -31,6 +39,7 @@ print("Thanks for using calculator!")
 ## The `while` Loop 🔄
 
 ### Basic Syntax
+
 ```python
 while condition:
     # Code to repeat
@@ -39,6 +48,7 @@ while condition:
 ```
 
 ### Simple Example
+
 ```python
 count = 1
 while count <= 3:
@@ -49,6 +59,7 @@ print("Done counting!")
 ```
 
 ### Output:
+
 ```
 Count: 1
 Count: 2
@@ -61,6 +72,7 @@ Done counting!
 ## Infinite Loops (The Good Kind) ♾️
 
 ### When You Want to Loop Forever
+
 ```python
 while True:
     # This runs forever
@@ -71,6 +83,7 @@ while True:
 ```
 
 ### The `break` Statement
+
 - **Immediately exits** the loop
 - **Jumps to** code after the loop
 - **Common pattern** for menu systems
@@ -80,6 +93,7 @@ while True:
 ## Menu Systems with Loops 📋
 
 ### Classic Menu Pattern
+
 ```python
 while True:
     print("\n--- MENU ---")
@@ -105,6 +119,7 @@ while True:
 ## Loop Control: `break` and `continue` 🎮
 
 ### `break` - Exit Loop Completely
+
 ```python
 while True:
     number = int(input("Enter number (0 to quit): "))
@@ -114,6 +129,7 @@ while True:
 ```
 
 ### `continue` - Skip to Next Iteration
+
 ```python
 count = 0
 while count < 5:
@@ -129,6 +145,7 @@ while count < 5:
 ## 🔨 Live Coding: Calculator v2.0
 
 ### Never-Ending Calculator!
+
 ```python
 print("🧮 Never-Ending Calculator v2.0")
 
@@ -162,6 +179,7 @@ while True:
 ## What We Just Built 🎉
 
 ### New Powers
+
 - ✅ **Infinite loop** keeps calculator running
 - ✅ **Menu system** for user choices
 - ✅ **Multiple calculations** without restarting program
@@ -169,6 +187,7 @@ while True:
 - ✅ **Professional user experience**
 
 ### User Experience Improved
+
 - Calculator doesn't exit after one calculation
 - Users can perform many operations
 - Clean menu interface
@@ -179,12 +198,14 @@ while True:
 ## Quick Exercise (2 minutes) ⚡
 
 ### Your Turn!
+
 1. **Add "3️⃣ Power Operations"** to the menu
 2. **Test the exit functionality** - make sure it works
 3. **Try invalid menu choices** - see error handling
 4. **Add more operations** to the basic math section
 
 ### Challenge: Power Operations Menu
+
 ```python
 elif choice == "3":
     print("🔥 POWER OPERATIONS")
@@ -199,6 +220,7 @@ elif choice == "3":
 ## Loop Patterns You'll Use 💡
 
 ### Input Validation Loop
+
 ```python
 while True:
     age = input("Enter your age: ")
@@ -209,6 +231,7 @@ while True:
 ```
 
 ### Countdown Loop
+
 ```python
 countdown = 5
 while countdown > 0:
@@ -218,6 +241,7 @@ print("Go!")
 ```
 
 ### Accumulator Loop
+
 ```python
 total = 0
 count = 0
@@ -233,6 +257,7 @@ average = total / count
 ## Common Loop Mistakes 🚨
 
 ### Infinite Loop (The Bad Kind)
+
 ```python
 # This never stops!
 count = 1
@@ -242,6 +267,7 @@ while count <= 10:
 ```
 
 ### Off-by-One Errors
+
 ```python
 # Want to print 1-10
 count = 1
@@ -251,6 +277,7 @@ while count < 10:  # Only goes to 9!
 ```
 
 ### Indentation Problems
+
 ```python
 # Wrong indentation
 while True:
@@ -262,17 +289,20 @@ print("This won't work")
 ## While vs For Loops 🤔
 
 ### Use `while` When:
+
 - ✅ You don't know how many iterations
 - ✅ Condition might never be true
 - ✅ Menu systems and user interfaces
 - ✅ "Keep going until user says stop"
 
 ### Use `for` When:
+
 - ✅ You know the number of iterations
 - ✅ Looping through collections (lists, strings)
 - ✅ "Do this exactly N times"
 
 ### For Our Calculator
+
 - `while` is perfect for menu systems!
 
 ---
@@ -280,6 +310,7 @@ print("This won't work")
 ## Key Takeaways 📚
 
 ### What You Learned
+
 - ✅ **while loops** repeat code based on conditions
 - ✅ **Infinite loops** with `while True`
 - ✅ **break** exits loops immediately
@@ -287,6 +318,7 @@ print("This won't work")
 - ✅ **Menu systems** using loop patterns
 
 ### Next Up: Lists & History!
+
 - Store multiple values
 - Remember calculation history
 - Track user's calculations

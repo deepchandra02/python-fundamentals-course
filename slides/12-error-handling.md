@@ -1,5 +1,11 @@
+---
+marp: true
+---
+
 # Module 12: Error Handling & Polish 🛡️
+
 ## Making Your Calculator Bulletproof
+
 **Duration: 6 minutes | Time: 1:32-1:38**
 
 ---
@@ -7,6 +13,7 @@
 ## Why Error Handling Matters 💥
 
 ### What Happens Without Error Handling
+
 ```python
 # User enters "hello" instead of number
 num1 = float(input("Enter number: "))  # CRASH! 💥
@@ -15,6 +22,7 @@ num1 = float(input("Enter number: "))  # CRASH! 💥
 ```
 
 ### What Happens With Error Handling
+
 ```python
 # Graceful handling of user mistakes
 while True:
@@ -27,6 +35,7 @@ while True:
 ```
 
 ### Professional vs Amateur Apps
+
 - **Amateur**: Crashes on unexpected input
 - **Professional**: Handles errors gracefully with helpful messages
 
@@ -35,6 +44,7 @@ while True:
 ## Types of Errors 🚨
 
 ### Syntax Errors (Code Problems)
+
 ```python
 # These prevent code from running at all
 if x = 5:           # SyntaxError: should be ==
@@ -42,6 +52,7 @@ if x = 5:           # SyntaxError: should be ==
 ```
 
 ### Runtime Errors (User Problems)
+
 ```python
 # These happen during program execution
 int("hello")        # ValueError
@@ -51,6 +62,7 @@ my_dict["missing"] # KeyError
 ```
 
 ### Logical Errors (Logic Problems)
+
 ```python
 # Code runs but produces wrong results
 def calculate_area(radius):
@@ -62,6 +74,7 @@ def calculate_area(radius):
 ## Try/Except: Catching Errors 🎣
 
 ### Basic Try/Except
+
 ```python
 try:
     # Code that might fail
@@ -75,6 +88,7 @@ except ZeroDivisionError:
 ```
 
 ### Catch Multiple Errors
+
 ```python
 try:
     # Risky code here
@@ -90,6 +104,7 @@ except Exception as e:
 ## The try/except/else/finally Pattern 🔄
 
 ### Complete Error Handling
+
 ```python
 try:
     # Code that might fail
@@ -112,6 +127,7 @@ finally:
 ## 🔨 Live Coding: Calculator v4.0
 
 ### Bulletproof Input Functions!
+
 ```python
 def safe_float_input(prompt):
     """Get float input with error handling"""
@@ -143,6 +159,7 @@ def safe_divide(x, y):
 ## Advanced Error Handling Patterns 💡
 
 ### Input Validation Loop
+
 ```python
 def get_positive_number(prompt):
     """Get a positive number from user"""
@@ -173,6 +190,7 @@ def get_integer_in_range(prompt, min_val, max_val):
 ## What We Just Added 🎉
 
 ### Bulletproof Features
+
 - ✅ **Safe input functions** that never crash
 - ✅ **Helpful error messages** instead of crashes
 - ✅ **Input validation** for all user entries
@@ -180,6 +198,7 @@ def get_integer_in_range(prompt, min_val, max_val):
 - ✅ **Professional user experience**
 
 ### User Experience Improvements
+
 - **No more crashes** from invalid input
 - **Clear feedback** on what went wrong
 - **Second chances** to enter correct data
@@ -190,11 +209,13 @@ def get_integer_in_range(prompt, min_val, max_val):
 ## Quick Exercise (1 minute) ⚡
 
 ### Your Turn!
+
 1. **Test safe input** with invalid entries (letters, symbols)
 2. **Try pressing Ctrl+C** during input - what happens?
 3. **Add validation** for negative numbers in square root
 
 ### Challenge: Handle Keyboard Interrupt
+
 ```python
 def safe_calculator():
     try:
@@ -212,6 +233,7 @@ def safe_calculator():
 ## Specific Calculator Error Cases 🧮
 
 ### Division by Zero
+
 ```python
 def safe_divide(x, y):
     if y == 0:
@@ -225,6 +247,7 @@ def safe_modulo(x, y):
 ```
 
 ### Invalid Operations
+
 ```python
 def validate_operation(op):
     valid_operations = {"+", "-", "*", "/", "**", "%", "//"}
@@ -234,6 +257,7 @@ def validate_operation(op):
 ```
 
 ### Range Validation
+
 ```python
 def safe_power(base, exponent):
     try:
@@ -249,6 +273,7 @@ def safe_power(base, exponent):
 ## User-Friendly Error Messages 💬
 
 ### Bad Error Messages ❌
+
 ```python
 # Technical jargon users don't understand
 except ValueError:
@@ -259,6 +284,7 @@ except ZeroDivisionError:
 ```
 
 ### Good Error Messages ✅
+
 ```python
 # Clear, helpful, actionable messages
 except ValueError:
@@ -269,6 +295,7 @@ except ZeroDivisionError:
 ```
 
 ### Message Guidelines
+
 - **Use emojis** for visual appeal
 - **Be specific** about what went wrong
 - **Be helpful** - suggest what to do next
@@ -279,6 +306,7 @@ except ZeroDivisionError:
 ## Logging Errors for Debugging 📊
 
 ### Simple Error Logging
+
 ```python
 import datetime
 
@@ -295,6 +323,7 @@ except Exception as e:
 ```
 
 ### Debug Mode
+
 ```python
 DEBUG_MODE = True  # Set to False for production
 
@@ -315,6 +344,7 @@ except Exception as e:
 ## Error Handling Best Practices 🏆
 
 ### Be Specific with Exceptions
+
 ```python
 # Good ✅ - specific error handling
 try:
@@ -330,6 +360,7 @@ except:
 ```
 
 ### Don't Ignore Errors
+
 ```python
 # Bad ❌ - silent failure
 try:
@@ -346,6 +377,7 @@ except Exception as e:
 ```
 
 ### Fail Fast When Appropriate
+
 ```python
 def divide(x, y):
     # Check preconditions early
@@ -364,6 +396,7 @@ def divide(x, y):
 ## Testing Error Handling 🧪
 
 ### Manual Testing Scenarios
+
 1. **Enter letters** instead of numbers
 2. **Enter symbols** like @#$%
 3. **Press Enter** without typing anything
@@ -372,6 +405,7 @@ def divide(x, y):
 6. **Press Ctrl+C** during input
 
 ### Automated Testing (Advanced)
+
 ```python
 def test_safe_input():
     # This would be in a separate test file
@@ -389,6 +423,7 @@ def test_safe_input():
 ## Key Takeaways 📚
 
 ### What You Learned
+
 - ✅ **try/except blocks** catch and handle errors
 - ✅ **Input validation** prevents crashes
 - ✅ **User-friendly messages** improve experience
@@ -396,6 +431,7 @@ def test_safe_input():
 - ✅ **Professional error handling** separates good from great apps
 
 ### Next Up: Modules & Advanced Features!
+
 - Import external libraries
 - Use math module for advanced calculations
 - Create scientific calculator features

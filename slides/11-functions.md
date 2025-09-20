@@ -1,5 +1,11 @@
+---
+marp: true
+---
+
 # Module 11: Functions & Organization 🏗️
+
 ## Building Reusable Code Blocks
+
 **Duration: 6 minutes | Time: 1:26-1:32**
 
 ---
@@ -7,6 +13,7 @@
 ## Why Functions? 🤔
 
 ### The Problem: Repetitive Code
+
 ```python
 # Calculator without functions - messy!
 num1 = float(input("First number: "))
@@ -22,6 +29,7 @@ elif operation == "*":
 ```
 
 ### The Solution: Functions
+
 ```python
 # Clean, organized, reusable!
 def add(x, y):
@@ -42,12 +50,14 @@ num1, num2 = get_two_numbers()
 ## What Are Functions? 📦
 
 ### Think of Functions as...
+
 - 🏭 **Factories** - input materials, output products
 - 📱 **Apps** - tap button, get result
 - 🎛️ **Black boxes** - input goes in, output comes out
 - 🧮 **Calculator buttons** - press +, get addition
 
 ### Function Benefits
+
 - **Reusability** - write once, use many times
 - **Organization** - group related code together
 - **Testing** - easier to test small pieces
@@ -59,6 +69,7 @@ num1, num2 = get_two_numbers()
 ## Creating Functions 🛠️
 
 ### Basic Function Syntax
+
 ```python
 def function_name(parameters):
     """Optional docstring describing function"""
@@ -67,6 +78,7 @@ def function_name(parameters):
 ```
 
 ### Simple Examples
+
 ```python
 def greet():
     """Print a greeting message"""
@@ -87,6 +99,7 @@ def get_user_name():
 ## Parameters and Arguments 📥
 
 ### Parameters vs Arguments
+
 ```python
 def add(x, y):    # x and y are PARAMETERS
     return x + y
@@ -95,6 +108,7 @@ result = add(5, 3)  # 5 and 3 are ARGUMENTS
 ```
 
 ### Different Parameter Types
+
 ```python
 # Required parameters
 def multiply(x, y):
@@ -120,6 +134,7 @@ def calculate(num1, operation, num2):
 ## Return Values 📤
 
 ### Functions That Return Values
+
 ```python
 def add(x, y):
     return x + y
@@ -138,6 +153,7 @@ name = get_operation_name("+") # name = "Addition"
 ```
 
 ### Functions That Don't Return (Return None)
+
 ```python
 def print_welcome():
     print("Welcome to Calculator!")
@@ -154,6 +170,7 @@ def show_history(calculations):
 ## 🔨 Live Coding: Calculator v3.0
 
 ### Organizing with Functions!
+
 ```python
 def add(x, y):
     return x + y
@@ -193,6 +210,7 @@ if func:
 ## Advanced Function Patterns 💡
 
 ### Storing Functions in Dictionaries
+
 ```python
 # Functions as values!
 operations = {
@@ -208,6 +226,7 @@ result = operations[op](10, 5)  # Calls add(10, 5)
 ```
 
 ### Functions Calling Other Functions
+
 ```python
 def safe_divide(x, y):
     if y == 0:
@@ -226,6 +245,7 @@ def calculate_with_validation(num1, op, num2):
 ## What We Just Built 🎉
 
 ### New Architecture
+
 - ✅ **Modular design** - each operation is separate function
 - ✅ **Reusable components** - functions used anywhere
 - ✅ **Clean organization** - related code grouped together
@@ -233,6 +253,7 @@ def calculate_with_validation(num1, op, num2):
 - ✅ **Professional structure** - like real applications
 
 ### Code Quality Improvements
+
 - **Readable** - clear function names explain purpose
 - **Testable** - can test each function individually
 - **Maintainable** - bugs isolated to specific functions
@@ -243,11 +264,13 @@ def calculate_with_validation(num1, op, num2):
 ## Quick Exercise (1 minute) ⚡
 
 ### Your Turn!
+
 1. **Create power() function** for exponentiation
 2. **Add modulo() function** for remainder
 3. **Update operations dictionary** with new functions
 
 ### Challenge: Advanced Functions
+
 ```python
 def power(base, exponent):
     return base ** exponent
@@ -268,6 +291,7 @@ def factorial(n):
 ## Function Documentation 📚
 
 ### Docstrings: Professional Documentation
+
 ```python
 def calculate_area(radius):
     """
@@ -287,6 +311,7 @@ help(calculate_area)
 ```
 
 ### Good Function Names
+
 ```python
 # Good ✅
 def calculate_circle_area(radius):
@@ -304,6 +329,7 @@ def check(x):
 ## Scope: Variable Visibility 🔍
 
 ### Local vs Global Scope
+
 ```python
 # Global variable
 app_name = "Calculator"
@@ -318,6 +344,7 @@ print(message)             # Error - message is local to function
 ```
 
 ### Function Parameters Are Local
+
 ```python
 def add(x, y):
     # x and y only exist inside this function
@@ -332,6 +359,7 @@ def add(x, y):
 ## Common Function Patterns 🎯
 
 ### Input Validation Functions
+
 ```python
 def safe_float_input(prompt):
     while True:
@@ -350,6 +378,7 @@ def get_valid_operation():
 ```
 
 ### Utility Functions
+
 ```python
 def format_result(value, decimal_places=2):
     return f"{value:.{decimal_places}f}"
@@ -367,6 +396,7 @@ def is_valid_number(text):
 ## Function Best Practices 💎
 
 ### Single Responsibility Principle
+
 ```python
 # Good ✅ - each function does one thing
 def get_numbers():
@@ -392,6 +422,7 @@ def calculate_and_display():
 ```
 
 ### Keep Functions Small
+
 - **Rule of thumb**: If you can't see entire function on screen, it's too big
 - **Break down** large functions into smaller ones
 - **Each function** should have clear, single purpose
@@ -401,6 +432,7 @@ def calculate_and_display():
 ## Key Takeaways 📚
 
 ### What You Learned
+
 - ✅ **Functions organize code** into reusable blocks
 - ✅ **Parameters and return values** for input/output
 - ✅ **Scope** determines variable visibility
@@ -408,6 +440,7 @@ def calculate_and_display():
 - ✅ **Professional code structure** with modular design
 
 ### Next Up: Error Handling!
+
 - Handle user mistakes gracefully
 - Try/except blocks for robust code
 - Input validation and error messages

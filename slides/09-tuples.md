@@ -1,5 +1,11 @@
+---
+marp: true
+---
+
 # Module 9: Tuples & Constants 🔒
+
 ## Immutable Sequences for Fixed Data
+
 **Duration: 5 minutes | Time: 1:16-1:21**
 
 ---
@@ -7,12 +13,14 @@
 ## What Are Tuples? 🎯
 
 ### Think of Tuples as...
+
 - 📐 **Mathematical coordinates** (x, y) that don't change
 - 🌍 **GPS coordinates** (latitude, longitude)
 - 📅 **Dates** (year, month, day)
 - 🔢 **Mathematical constants** that should never change
 
 ### Key Characteristics
+
 - **Immutable** - cannot be changed after creation
 - **Ordered** - items have positions (like lists)
 - **Allow duplicates** - can have repeated values
@@ -23,6 +31,7 @@
 ## Tuples vs Lists: The Difference 📊
 
 ### Lists (Mutable)
+
 ```python
 calculations = ["5+3=8", "10-2=8"]
 calculations.append("4*6=24")     # ✅ Can modify
@@ -30,6 +39,7 @@ calculations[0] = "6+3=9"         # ✅ Can change items
 ```
 
 ### Tuples (Immutable)
+
 ```python
 pi_e_sqrt2 = (3.14159, 2.71828, 1.41421)
 pi_e_sqrt2.append(1.73205)        # ❌ Error! No append method
@@ -37,6 +47,7 @@ pi_e_sqrt2[0] = 3.14              # ❌ Error! Can't change items
 ```
 
 ### When to Use Each
+
 - **Lists**: Shopping lists, calculation history (things that change)
 - **Tuples**: Coordinates, constants, configurations (things that don't change)
 
@@ -45,6 +56,7 @@ pi_e_sqrt2[0] = 3.14              # ❌ Error! Can't change items
 ## Creating Tuples 🛠️
 
 ### Basic Syntax
+
 ```python
 # With parentheses (recommended)
 point = (10, 20)
@@ -62,6 +74,7 @@ single = (42,)  # Without comma, it's just parentheses around 42
 ```
 
 ### Mathematical Constants
+
 ```python
 MATH_CONSTANTS = (3.14159, 2.71828, 1.41421)  # π, e, √2
 CONSTANT_NAMES = ("Pi", "Euler's e", "√2")
@@ -72,6 +85,7 @@ CONSTANT_NAMES = ("Pi", "Euler's e", "√2")
 ## Accessing Tuple Elements 🔍
 
 ### Index Access (Same as Lists)
+
 ```python
 point = (10, 20)
 x = point[0]        # 10
@@ -83,12 +97,14 @@ e = constants[1]    # 2.71828
 ```
 
 ### Negative Indexing
+
 ```python
 point = (10, 20, 30)
 last = point[-1]    # 30
 ```
 
 ### Length and Membership
+
 ```python
 point = (10, 20, 30)
 length = len(point)         # 3
@@ -100,6 +116,7 @@ has_ten = 10 in point      # True
 ## Tuple Unpacking: The Magic! ✨
 
 ### Multiple Assignment
+
 ```python
 point = (10, 20)
 x, y = point        # x = 10, y = 20
@@ -109,6 +126,7 @@ name, age, city = ("John", 25, "NYC")
 ```
 
 ### Function Returns
+
 ```python
 def get_circle_info(radius):
     area = 3.14159 * radius ** 2
@@ -121,6 +139,7 @@ print(f"Area: {area}, Circumference: {circumference}")
 ```
 
 ### Swapping Variables
+
 ```python
 a = 10
 b = 20
@@ -132,6 +151,7 @@ a, b = b, a     # Swap values! a=20, b=10
 ## 🔨 Live Coding: Calculator v2.3
 
 ### Adding Mathematical Constants!
+
 ```python
 # Mathematical constants as tuples
 MATH_CONSTANTS = (3.14159, 2.71828, 1.41421)  # π, e, √2
@@ -149,6 +169,7 @@ print(f"Distance calculation between {point1} and {point2}")
 ```
 
 ### Using `zip()` Function
+
 - **Combines two sequences** element by element
 - **Perfect for** pairing names with values
 - **Returns pairs** that can be unpacked
@@ -158,12 +179,14 @@ print(f"Distance calculation between {point1} and {point2}")
 ## What We Just Added 🎉
 
 ### New Features
+
 - ✅ **Mathematical constants** stored safely
 - ✅ **Professional constant display**
 - ✅ **Coordinate system** foundation
 - ✅ **Data that can't be accidentally changed**
 
 ### Why Use Tuples Here?
+
 - Constants **shouldn't change** during program
 - **Prevents bugs** from accidental modification
 - **Clear intent** - this data is fixed
@@ -174,11 +197,13 @@ print(f"Distance calculation between {point1} and {point2}")
 ## Quick Exercise (1 minute) ⚡
 
 ### Your Turn!
+
 1. **Add more mathematical constants** (golden ratio, speed of light)
 2. **Create coordinate tuples** for geometric shapes
 3. **Try changing a tuple** - see what error you get
 
 ### Challenge Ideas
+
 ```python
 # More constants
 MORE_CONSTANTS = (1.618, 299792458, 9.81)  # φ, c, g
@@ -194,6 +219,7 @@ rectangle = ((0, 0), (10, 0), (10, 5), (0, 5))  # Four corners
 ## Useful Tuple Methods 🛠️
 
 ### Built-in Methods
+
 ```python
 numbers = (1, 2, 3, 2, 4, 2)
 
@@ -205,6 +231,7 @@ index_3 = numbers.index(3)      # 2
 ```
 
 ### Converting Between Types
+
 ```python
 # List to tuple
 my_list = [1, 2, 3]
@@ -222,6 +249,7 @@ letters = tuple("hello")        # ('h', 'e', 'l', 'l', 'o')
 ## Tuples in Calculator Applications 💡
 
 ### Configuration That Shouldn't Change
+
 ```python
 APP_CONFIG = (
     "Python Calculator",    # App name
@@ -233,6 +261,7 @@ app_name, version, app_type, is_ready = APP_CONFIG
 ```
 
 ### RGB Color Values
+
 ```python
 COLORS = {
     "red": (255, 0, 0),
@@ -243,6 +272,7 @@ r, g, b = COLORS["red"]
 ```
 
 ### Date and Time
+
 ```python
 today = (2024, 9, 20)           # Year, month, day
 year, month, day = today
@@ -253,6 +283,7 @@ year, month, day = today
 ## When Immutability Helps 🛡️
 
 ### Prevents Accidental Changes
+
 ```python
 # With list - dangerous!
 constants = [3.14159, 2.71828]
@@ -264,11 +295,13 @@ constants[0] = 3.0  # Error! Can't change
 ```
 
 ### Thread Safety
+
 - **Multiple parts** of program can safely read tuple
 - **No need to worry** about other code changing values
 - **Important for** larger applications
 
 ### Dictionary Keys
+
 ```python
 # Tuples can be dictionary keys (lists cannot!)
 locations = {
@@ -283,6 +316,7 @@ locations = {
 ## Common Tuple Patterns 🎯
 
 ### Multiple Return Values
+
 ```python
 def get_name_age():
     return "John", 25  # Returns tuple
@@ -291,6 +325,7 @@ name, age = get_name_age()
 ```
 
 ### Iteration with Index and Value
+
 ```python
 items = ("a", "b", "c")
 for i, value in enumerate(items):
@@ -298,6 +333,7 @@ for i, value in enumerate(items):
 ```
 
 ### Safe Function Parameters
+
 ```python
 def calculate_distance(point1, point2):
     # Function can't accidentally modify the points
@@ -311,6 +347,7 @@ def calculate_distance(point1, point2):
 ## Key Takeaways 📚
 
 ### What You Learned
+
 - ✅ **Tuples are immutable** lists
 - ✅ **Perfect for constants** and fixed data
 - ✅ **Tuple unpacking** for multiple assignment
@@ -318,6 +355,7 @@ def calculate_distance(point1, point2):
 - ✅ **Memory efficient** and thread-safe
 
 ### Next Up: Sets!
+
 - Unique collections
 - Track which operations user has tried
 - Set operations (union, intersection)
