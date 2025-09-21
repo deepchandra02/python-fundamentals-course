@@ -1,6 +1,4 @@
 # Module 8: Dictionaries & Settings
-# Duration: 6 minutes | Time: 1:10-1:16
-
 # 🔨 Live Coding - Calculator v2.2
 
 # TODO: Create user settings dictionary
@@ -40,7 +38,7 @@ operation_functions = {
 result = operation_functions["+"](10, 5)
 print(f"Function result: {result}")
 
-# ⚡ Quick Exercise (1 min):
+# ⚡ Quick Exercise:
 # 1. Add more settings to user_settings
 # 2. Add multiplication and division to operations
 # 3. Try accessing a key that doesn't exist (what happens?)

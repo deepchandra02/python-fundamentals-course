@@ -1,6 +1,4 @@
 # Module 7: Lists & History
-# Duration: 7 minutes | Time: 1:03-1:10
-
 # 🔨 Live Coding - Calculator v2.1
 
 # TODO: Create an empty list to store calculation history
@@ -31,7 +29,7 @@ add_to_history(calc_string)
 # TODO: Call show_history to test it
 show_history()
 
-# ⚡ Quick Exercise (2 min):
+# ⚡ Quick Exercise:
 # 1. Add more calculations to history
 # 2. Add "3️⃣ Show History" option to your calculator menu
 # 3. Think about how to clear history

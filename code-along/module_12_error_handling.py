@@ -1,6 +1,4 @@
 # Module 12: Error Handling & Polish
-# Duration: 6 minutes | Time: 1:32-1:38
-
 # 🔨 Live Coding - Calculator v4.0
 
 # TODO: Create safe input function with error handling
@@ -46,7 +44,7 @@ try:
 except KeyboardInterrupt:
     print("\n👋 Calculator closed safely!")
 
-# ⚡ Quick Exercise (1 min):
+# ⚡ Quick Exercise:
 # 1. Test the safe input with invalid entries
 # 2. Try pressing Ctrl+C during input
 # 3. Add validation for negative numbers in square root

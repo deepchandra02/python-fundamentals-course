@@ -1,6 +1,4 @@
 # Module 10: Sets & Unique Operations
-# Duration: 5 minutes | Time: 1:21-1:26
-
 # 🔨 Live Coding - Calculator v2.4
 
 # TODO: Create sets to track unique operations
@@ -31,7 +29,7 @@ print(f"Union: {set1 | set2}")           # All items
 print(f"Intersection: {set1 & set2}")    # Common items
 print(f"Difference: {set1 - set2}")      # Items in set1 but not set2
 
-# ⚡ Quick Exercise (1 min):
+# ⚡ Quick Exercise:
 # 1. Track unique numbers used in calculations
 # 2. What happens if you add the same operation twice?
 # 3. Try set operations with your own sets

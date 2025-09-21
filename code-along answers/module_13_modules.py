@@ -1,6 +1,4 @@
 # Module 13: Modules & Advanced Features
-# Duration: 6 minutes | Time: 1:38-1:44
-
 # 🔨 Live Coding - Calculator v4.0 FINAL
 
 # TODO: Import the math module
@@ -64,7 +62,7 @@ scientific_operations()
 print("\nTesting BMI calculator:")
 calculate_bmi()
 
-# ⚡ Quick Exercise (1 min):
+# ⚡ Quick Exercise:
 # 1. Add cosine and tangent functions
 # 2. Add more constants like math.pi and math.e
 # 3. Create a temperature converter function

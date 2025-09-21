@@ -159,7 +159,7 @@ def menu_calculator_v20():
 
 
 # ==========================================
-# MODULE 7: LISTS & HISTORY (1:03-1:10)
+# MODULE 7: LISTS & HISTORY
 # ==========================================
 
 # TODO 7.1: Create global history list
@@ -186,7 +186,7 @@ def show_history():
 
 
 # ==========================================
-# MODULE 8: DICTIONARIES & SETTINGS (1:10-1:16)
+# MODULE 8: DICTIONARIES & SETTINGS
 # ==========================================
 
 # TODO 8.1: Create user settings dictionary
@@ -214,7 +214,7 @@ def display_user_info():
 
 
 # ==========================================
-# MODULE 9: TUPLES & CONSTANTS (1:16-1:21)
+# MODULE 9: TUPLES & CONSTANTS
 # ==========================================
 
 # TODO 9.1: Mathematical constants as tuples
@@ -240,7 +240,7 @@ def distance_example():
 
 
 # ==========================================
-# MODULE 10: SETS & UNIQUE OPERATIONS (1:21-1:26)
+# MODULE 10: SETS & UNIQUE OPERATIONS
 # ==========================================
 
 # TODO 10.1: Track unique operations
@@ -260,7 +260,7 @@ def track_operation(operation_name):
 
 
 # ==========================================
-# MODULE 11: FUNCTIONS & ORGANIZATION (1:26-1:32)
+# MODULE 11: FUNCTIONS & ORGANIZATION
 # ==========================================
 
 
@@ -314,7 +314,7 @@ def get_two_numbers():
 
 
 # ==========================================
-# MODULE 12: ERROR HANDLING & POLISH (1:32-1:38)
+# MODULE 12: ERROR HANDLING & POLISH
 # ==========================================
 
 
@@ -341,7 +341,7 @@ def safe_operation_input():
 
 
 # ==========================================
-# MODULE 13: MODULES & ADVANCED FEATURES (1:38-1:44)
+# MODULE 13: MODULES & ADVANCED FEATURES
 # ==========================================
 
 # TODO 13.1: Import math module
