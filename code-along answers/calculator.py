@@ -86,31 +86,31 @@ def smart_calculator_v10():
     print("🧮 Smart Calculator v1.0")
 
     # TODO 5.1: Get user inputs
-    # num1 = float(input("First number: "))
-    # operation = input("Operation (+, -, *, /, **): ")
-    # num2 = float(input("Second number: "))
+    num1 = float(input("First number: "))
+    operation = input("Operation (+, -, *, /, **): ")
+    num2 = float(input("Second number: "))
 
     # TODO 5.2: Use if/elif/else for different operations
-    # if operation == "+":
-    #     result = num1 + num2
-    # elif operation == "-":
-    #     result = num1 - num2
-    # elif operation == "*":
-    #     result = num1 * num2
-    # elif operation == "/":
-    #     if num2 != 0:
-    #         result = num1 / num2
-    #     else:
-    #         result = "❌ Error: Can't divide by zero!"
-    # elif operation == "**":
-    #     result = num1 ** num2
-    # else:
-    #     result = "❌ Invalid operation!"
+    if operation == "+":
+        result = num1 + num2
+    elif operation == "-":
+        result = num1 - num2
+    elif operation == "*":
+        result = num1 * num2
+    elif operation == "/":
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            result = "❌ Error: Can't divide by zero!"
+    elif operation == "**":
+        result = num1**num2
+    else:
+        result = "❌ Invalid operation!"
 
     # TODO 5.3: Print the result
-    # print(f"🎯 Result: {result}")
+    print(f"🎯 Result: {result}")
 
-    pass  # Remove this when you add code
+    # pass  # Remove this when you add code
 
 
 # ==========================================
@@ -491,7 +491,7 @@ if __name__ == "__main__":
     """
 
     # For testing individual modules during workshop:
-    test_module(3)  # Change number to test different modules
+    test_module(5)  # Change number to test different modules
 
     # For final calculator (uncomment when complete):
     # main_calculator()

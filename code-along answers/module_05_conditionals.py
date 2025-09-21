@@ -1,37 +1,34 @@
 # Module 5: Smart Decisions
-# Duration: 15 minutes | Time: 0:40-0:55
-
 # 🔨 Live Coding - Calculator v1.0
 
 print("🧮 Smart Calculator v1.0")
 
 # TODO: Get user inputs
-num1 =
-operation =
-num2 =
+num1 = float(input("First number: "))
+operation = input("Operation (+, -, *, /, **): ")
+num2 = float(input("Second number: "))
 
 # TODO: Use if/elif/else to handle different operations
 if operation == "+":
-    result =
+    result = num1 + num2
 elif operation == "-":
-    result =
+    result = num1 - num2
 elif operation == "*":
-    result =
+    result = num1 * num2
 elif operation == "/":
-    # TODO: Handle division by zero
     if num2 != 0:
-        result =
+        result = num1 / num2
     else:
-        result =
+        result = "❌ Error: Can't divide by zero!"
 elif operation == "**":
-    result =
+    result = num1**num2
 else:
-    result =
+    result = "❌ Invalid operation!"
 
 # TODO: Print the result
+print(f"🎯 Result: {result}")
 
-
-# ⚡ Quick Exercise (4 min):
+# ⚡ Quick Exercise:
 # 1. Test all operations including error cases
 # 2. Try dividing by zero
 # 3. Try entering an invalid operation like "#"
