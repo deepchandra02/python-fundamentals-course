@@ -20,7 +20,7 @@ Workshop Plan:
 
 
 # ==========================================
-# MODULE 2: VARIABLES & NUMBERS (0:08-0:18)
+# MODULE 2: VARIABLES & NUMBERS
 # ==========================================
 
 # TODO 2.1: Create calculator info variables
@@ -32,7 +32,7 @@ author = ""
 
 
 # ==========================================
-# MODULE 3: USER INPUT MAGIC (0:18-0:28)
+# MODULE 3: USER INPUT MAGIC
 # ==========================================
 
 
@@ -41,18 +41,16 @@ def basic_calculator_v03():
     print("🧮 Interactive Calculator v0.3")
 
     # TODO 3.1: Get user input for numbers
-    # num1 = float(input("Enter first number: "))
-    # num2 = float(input("Enter second number: "))
 
-    # TODO 3.2: Calculate and show result
-    # result = num1 + num2
+    # TODO 3.2: Calculate the sum and show result
+
     # print(f"✨ {num1} + {num2} = {result}")
 
     pass  # Remove this when you add code
 
 
 # ==========================================
-# MODULE 4: OPERATION STATION (0:28-0:40)
+# MODULE 4: OPERATION STATION
 # ==========================================
 
 

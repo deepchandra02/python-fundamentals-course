@@ -18,7 +18,7 @@ print("Welcome to Deep's Calculator!")
 
 
 # ==========================================
-# MODULE 2: VARIABLES & NUMBERS (0:08-0:18)
+# MODULE 2: VARIABLES & NUMBERS
 # ==========================================
 
 # TODO 2.1: Create calculator info variables
@@ -32,7 +32,7 @@ print(f"👨‍💻 Created by: {author}")
 
 
 # ==========================================
-# MODULE 3: USER INPUT MAGIC (0:18-0:28)
+# MODULE 3: USER INPUT MAGIC
 # ==========================================
 
 
@@ -41,18 +41,18 @@ def basic_calculator_v03():
     print("🧮 Interactive Calculator v0.3")
 
     # TODO 3.1: Get user input for numbers
-    # num1 = float(input("Enter first number: "))
-    # num2 = float(input("Enter second number: "))
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
     # TODO 3.2: Calculate and show result
-    # result = num1 + num2
-    # print(f"✨ {num1} + {num2} = {result}")
+    result = num1 + num2
+    print(f"✨ {num1} + {num2} = {result}")
 
-    pass  # Remove this when you add code
+    # pass  # Remove this when you add code
 
 
 # ==========================================
-# MODULE 4: OPERATION STATION (0:28-0:40)
+# MODULE 4: OPERATION STATION
 # ==========================================
 
 
@@ -491,10 +491,10 @@ if __name__ == "__main__":
     """
 
     # For testing individual modules during workshop:
-    # test_module(1)  # Change number to test different modules
+    test_module(3)  # Change number to test different modules
 
     # For final calculator (uncomment when complete):
     # main_calculator()
 
-    print("🎉 Welcome to the Python Fundamentals Workshop!")
-    print("👨‍💻 Follow along to build an amazing calculator!")
+    # print("🎉 Welcome to the Python Fundamentals Workshop!")
+    # print("👨‍💻 Follow along to build an amazing calculator!")

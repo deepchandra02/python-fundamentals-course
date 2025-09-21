@@ -1,6 +1,4 @@
 # Module 3: User Input Magic
-# Duration: 10 minutes | Time: 0:18-0:28
-
 # 🔨 Live Coding - Calculator v0.3
 
 print("🧮 Interactive Calculator v0.3")
@@ -15,9 +13,9 @@ num2 =
 result =
 
 # TODO: Show the result with nice formatting
+print(f"")
 
-
-# ⚡ Quick Exercise (2 min):
+# ⚡ Quick Exercise:
 # 1. Test with different numbers (try decimals!)
 # 2. What happens if you enter text instead of numbers?
 # 3. Try other operations like subtraction or multiplication

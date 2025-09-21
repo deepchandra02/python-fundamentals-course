@@ -1,23 +1,21 @@
 # Module 3: User Input Magic
-# Duration: 10 minutes | Time: 0:18-0:28
-
 # 🔨 Live Coding - Calculator v0.3
 
 print("🧮 Interactive Calculator v0.3")
 
 # TODO: Get user input for first number
-num1 =
+num1 = float(input("Enter first number: "))
 
 # TODO: Get user input for second number
-num2 =
+num2 = float(input("Enter second number: "))
 
 # TODO: Calculate the sum
-result =
+result = num1 + num2
 
 # TODO: Show the result with nice formatting
+print(f"✨ {num1} + {num2} = {result}")
 
-
-# ⚡ Quick Exercise (2 min):
+# ⚡ Quick Exercise:
 # 1. Test with different numbers (try decimals!)
 # 2. What happens if you enter text instead of numbers?
 # 3. Try other operations like subtraction or multiplication

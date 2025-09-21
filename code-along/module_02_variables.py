@@ -16,7 +16,7 @@
 # TODO: Print the demo calculation
 # print(f"Demo: {a} + {b} = add_result")
 
-# ⚡ Quick Exercise (3 min):
+# ⚡ Quick Exercise:
 # 1. Personalize your calculator with your own name
 # 2. Try different operations: subtraction, multiplication, division
 # 3. Experiment with different number types (int vs float)
