@@ -62,12 +62,11 @@ def multi_operation_calculator_v04():
     # num1 = float(input("First number: "))
     # num2 = float(input("Second number: "))
 
-    # TODO 4.2: Show all operations
-    # print(f"➕ Addition: {num1} + {num2} = {num1 + num2}")
-    # print(f"➖ Subtraction: {num1} - {num2} = {num1 - num2}")
-    # print(f"✖️ Multiplication: {num1} * {num2} = {num1 * num2}")
-    # print(f"➗ Division: {num1} / {num2} = {num1 / num2}")
-    # print(f"🔥 Power: {num1} ** {num2} = {num1 ** num2}")
+    print(f"➕ Addition: {num1} + {num2} = {num1 + num2}")
+    print(f"➖ Subtraction: {num1} - {num2} = {num1 - num2}")
+    print(f"✖️ Multiplication: {num1} * {num2} = {num1 * num2}")
+    print(f"➗ Division: {num1} / {num2} = {num1 / num2}")
+    print(f"🔥 Power: {num1} ** {num2} = {num1 ** num2}")
 
     # TODO 4.3: Add modulo operation (% operator)
 
@@ -75,7 +74,7 @@ def multi_operation_calculator_v04():
 
 
 # ==========================================
-# MODULE 5: SMART DECISIONS (0:40-0:55)
+# MODULE 5: SMART DECISIONS
 # ==========================================
 
 

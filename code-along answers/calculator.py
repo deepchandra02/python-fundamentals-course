@@ -61,23 +61,23 @@ def multi_operation_calculator_v04():
     print("🧮 Multi-Operation Calculator v0.4")
 
     # TODO 4.1: Get two numbers from user
-    # num1 = float(input("First number: "))
-    # num2 = float(input("Second number: "))
+    num1 = float(input("First number: "))
+    num2 = float(input("Second number: "))
 
     # TODO 4.2: Show all operations
-    # print(f"➕ Addition: {num1} + {num2} = {num1 + num2}")
-    # print(f"➖ Subtraction: {num1} - {num2} = {num1 - num2}")
-    # print(f"✖️ Multiplication: {num1} * {num2} = {num1 * num2}")
-    # print(f"➗ Division: {num1} / {num2} = {num1 / num2}")
-    # print(f"🔥 Power: {num1} ** {num2} = {num1 ** num2}")
+    print(f"➕ Addition: {num1} + {num2} = {num1 + num2}")
+    print(f"➖ Subtraction: {num1} - {num2} = {num1 - num2}")
+    print(f"✖️ Multiplication: {num1} * {num2} = {num1 * num2}")
+    print(f"➗ Division: {num1} / {num2} = {num1 / num2}")
+    print(f"🔥 Power: {num1} ** {num2} = {num1 ** num2}")
 
     # TODO 4.3: Add modulo operation (% operator)
-
-    pass  # Remove this when you add code
+    print(f"📐 Modulo: {num1} % {num2} = {num1 % num2}")
+    # pass  # Remove this when you add code
 
 
 # ==========================================
-# MODULE 5: SMART DECISIONS (0:40-0:55)
+# MODULE 5: SMART DECISIONS
 # ==========================================
 
 

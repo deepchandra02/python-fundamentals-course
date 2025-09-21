@@ -19,3 +19,6 @@ print(f"")
 # 1. Test with different numbers (try decimals!)
 # 2. What happens if you enter text instead of numbers?
 # 3. Try other operations like subtraction or multiplication
+# Rounding decimals
+# result = 10 / 3  # 3.3333333333333335
+# print(f"Result: {result:.2f}")  # Result: 3.33
