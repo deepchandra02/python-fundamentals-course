@@ -1,21 +1,20 @@
 # Module 2: Variables & Numbers
-
 # 🔨 Live Coding - Calculator v0.2
 
 # TODO: Create variables for calculator info
-app_name =
-version =
-author =
+# app_name =
+# version =
+# author =
 
 # TODO: Print calculator info using f-strings
 
 
 # TODO: Create some demo variables and do quick math
-a, b =
-result =
+# a, b =
+# add_result =
 
 # TODO: Print the demo calculation
-
+# print(f"Demo: {a} + {b} = add_result")
 
 # ⚡ Quick Exercise (3 min):
 # 1. Personalize your calculator with your own name

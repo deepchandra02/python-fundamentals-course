@@ -22,18 +22,13 @@ print("Welcome to Deep's Calculator!")
 # ==========================================
 
 # TODO 2.1: Create calculator info variables
-app_name = ""
-version = 0.0
-author = ""
+app_name = "Python Calculator"
+version = 1.0
+author = "Deep"
 
 # TODO 2.2: Print calculator info using f-strings
-
-
-# TODO 2.3: Demo variables and math
-a, b = 0, 0
-demo_result = 0
-
-# TODO 2.4: Print the demo calculation
+print(f"🧮 {app_name} v{version}")
+print(f"👨‍💻 Created by: {author}")
 
 
 # ==========================================

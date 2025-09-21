@@ -31,13 +31,6 @@ author = ""
 # TODO 2.2: Print calculator info using f-strings
 
 
-# TODO 2.3: Demo variables and math
-a, b = 0, 0
-demo_result = 0
-
-# TODO 2.4: Print the demo calculation
-
-
 # ==========================================
 # MODULE 3: USER INPUT MAGIC (0:18-0:28)
 # ==========================================
@@ -503,5 +496,5 @@ if __name__ == "__main__":
     # For final calculator (uncomment when complete):
     # main_calculator()
 
-    print("🎉 Welcome to the Python Fundamentals Workshop!")
-    print("👨‍💻 Follow along to build an amazing calculator!")
+    # print("🎉 Welcome to the Python Fundamentals Workshop!")
+    # print("👨‍💻 Follow along to build an amazing calculator!")

@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 ---
 
 # Module 6: Loop Power 🔄
