@@ -1,6 +1,4 @@
 # Module 6: Loop Power
-# Duration: 8 minutes | Time: 0:55-1:03
-
 # 🔨 Live Coding - Calculator v2.0
 
 print("🧮 Never-Ending Calculator v2.0")
@@ -40,5 +38,5 @@ while True:
     else:
         print("❌ Invalid choice!")
 
-# ⚡ Quick Exercise (2 min):
+# ⚡ Quick Exercise:
 # Add a "3️⃣ Power Operations" option to the menu

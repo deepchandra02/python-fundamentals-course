@@ -114,7 +114,7 @@ def smart_calculator_v10():
 
 
 # ==========================================
-# MODULE 6: LOOP POWER (0:55-1:03)
+# MODULE 6: LOOP POWER
 # ==========================================
 
 
@@ -123,35 +123,39 @@ def menu_calculator_v20():
     print("🧮 Never-Ending Calculator v2.0")
 
     # TODO 6.1: Create infinite loop
-    # while True:
-    #     # TODO 6.2: Display menu
-    #     print("\n🎯 CALCULATOR MENU")
-    #     print("1️⃣ Basic Math")
-    #     print("2️⃣ Exit")
-    #
-    #     choice = input("Choose (1-2): ")
-    #
-    #     # TODO 6.3: Handle menu choices
-    #     if choice == "2":
-    #         print("👋 Thanks for calculating!")
-    #         break
-    #     elif choice == "1":
-    #         # TODO 6.4: Get numbers and operation
-    #         num1 = float(input("First number: "))
-    #         op = input("Operation (+,-,*,/): ")
-    #         num2 = float(input("Second number: "))
-    #
-    #         # TODO 6.5: Calculate based on operation
-    #         if op == "+": result = num1 + num2
-    #         elif op == "-": result = num1 - num2
-    #         elif op == "*": result = num1 * num2
-    #         elif op == "/": result = num1 / num2 if num2 != 0 else "Error!"
-    #
-    #         print(f"✅ Result: {result}")
-    #     else:
-    #         print("❌ Invalid choice!")
+    while True:
+        # TODO 6.2: Display menu
+        print("\n🎯 CALCULATOR MENU")
+        print("1️⃣ Basic Math")
+        print("2️⃣ Exit")
 
-    pass  # Remove this when you add code
+        choice = input("Choose (1-2): ")
+
+        # TODO 6.3: Handle menu choices
+        if choice == "2":
+            print("👋 Thanks for calculating!")
+            break
+        elif choice == "1":
+            # TODO 6.4: Get numbers and operation
+            num1 = float(input("First number: "))
+            op = input("Operation (+,-,*,/): ")
+            num2 = float(input("Second number: "))
+
+            # TODO 6.5: Calculate based on operation
+            if op == "+":
+                result = num1 + num2
+            elif op == "-":
+                result = num1 - num2
+            elif op == "*":
+                result = num1 * num2
+            elif op == "/":
+                result = num1 / num2 if num2 != 0 else "Error!"
+
+            print(f"✅ Result: {result}")
+        else:
+            print("❌ Invalid choice!")
+
+    # pass  # Remove this when you add code
 
 
 # ==========================================
