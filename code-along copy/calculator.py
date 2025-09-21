@@ -1,10 +1,5 @@
-#!/usr/bin/env python3
 """
-🧮 PYTHON CALCULATOR WORKSHOP
-Interactive 90-minute coding experience
-
-This file will be built step-by-step during the workshop.
-Follow along with your instructor and fill in the TODOs!
+PYTHON CALCULATOR WORKSHOP
 
 Workshop Plan:
 - Start: Hello World (v0.1)
@@ -16,12 +11,10 @@ Workshop Plan:
 # ==========================================
 
 # TODO 1.1: Write your first print statement
-
+print("Hello, World!")
 
 # TODO 1.2: Add a welcome message for your calculator
-
-
-# TODO 1.3: Add a comment explaining what this program does
+print("Welcome to Deep's Calculator!")
 
 
 # ==========================================

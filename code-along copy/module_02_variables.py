@@ -1,6 +1,4 @@
 # Module 2: Variables & Numbers
-# Duration: 10 minutes | Time: 0:08-0:18
-
 # 🔨 Live Coding - Calculator v0.2
 
 # TODO: Create variables for calculator info
