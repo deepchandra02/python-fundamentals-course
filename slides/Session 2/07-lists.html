@@ -243,6 +243,42 @@ list2.append(<span class="hljs-number">4</span>)
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" lang="en-US">
+<h2 id="list-comprehension">List comprehension</h2>
+<p>It is a concise way to create lists in Python. It lets you build a new list by applying an expression to each item in an existing sequence, all in a single line of code.</p>
+<p>The basic syntax is:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">[expression <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> iterable]
+</code></pre>
+<p>Instead of writing:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">squares = []
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">5</span>):
+    squares.append(x**<span class="hljs-number">2</span>)
+</code></pre>
+<p>You can simply write: <code>squares = [x**2 for x in range(5)]</code></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" lang="en-US">
+<h2 id="list-comprehension-1">List comprehension</h2>
+<p>Here are some practical examples:</p>
+<p><strong>Creating a list of squares:</strong></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">squares = [x**<span class="hljs-number">2</span> <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">5</span>)]
+<span class="hljs-comment"># Result: [0, 1, 4, 9, 16]</span>
+</code></pre>
+<p><strong>With a condition (filtering):</strong></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">evens = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">10</span>) <span class="hljs-keyword">if</span> x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>]
+<span class="hljs-comment"># Result: [0, 2, 4, 6, 8]</span>
+</code></pre>
+<p><strong>Transforming strings:</strong></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">names = [<span class="hljs-string">&#x27;alice&#x27;</span>, <span class="hljs-string">&#x27;bob&#x27;</span>, <span class="hljs-string">&#x27;charlie&#x27;</span>]
+capitalized = [name.upper() <span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> names]
+<span class="hljs-comment"># Result: [&#x27;ALICE&#x27;, &#x27;BOB&#x27;, &#x27;CHARLIE&#x27;]</span>
+</code></pre>
+<p><strong>More complex example:</strong></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Get lengths of words that start with &#x27;a&#x27;</span>
+words = [<span class="hljs-string">&#x27;apple&#x27;</span>, <span class="hljs-string">&#x27;banana&#x27;</span>, <span class="hljs-string">&#x27;apricot&#x27;</span>, <span class="hljs-string">&#x27;cherry&#x27;</span>]
+lengths = [<span class="hljs-built_in">len</span>(word) <span class="hljs-keyword">for</span> word <span class="hljs-keyword">in</span> words <span class="hljs-keyword">if</span> word.startswith(<span class="hljs-string">&#x27;a&#x27;</span>)]
+<span class="hljs-comment"># Result: [5, 7]</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" lang="en-US">
 <h2 id="lists-vs-other-data-types-%F0%9F%93%8A">Lists vs Other Data Types <img class="emoji" draggable="false" alt="📊" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4ca.svg" data-marp-twemoji=""/></h2>
 <h3 id="lists-vs-strings">Lists vs Strings</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># String</span>
@@ -261,7 +297,7 @@ letters[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;H&
 <li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Unknown final size</strong> (user might do 1 or 100 calculations)</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" lang="en-US">
 <h2 id="key-takeaways-%F0%9F%93%9A">Key Takeaways <img class="emoji" draggable="false" alt="📚" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" data-marp-twemoji=""/></h2>
 <h3 id="what-you-learned">What You Learned</h3>
 <ul>

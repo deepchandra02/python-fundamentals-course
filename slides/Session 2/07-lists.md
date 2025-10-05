@@ -326,6 +326,65 @@ print(list1)         # [1, 2, 3, 4] - list1 changed too!
 
 ---
 
+## List comprehension
+
+It is a concise way to create lists in Python. It lets you build a new list by applying an expression to each item in an existing sequence, all in a single line of code.
+
+The basic syntax is:
+
+```python
+[expression for item in iterable]
+```
+
+Instead of writing:
+
+```python
+squares = []
+for x in range(5):
+    squares.append(x**2)
+```
+
+You can simply write: `squares = [x**2 for x in range(5)]`
+
+---
+
+## List comprehension
+
+Here are some practical examples:
+
+**Creating a list of squares:**
+
+```python
+squares = [x**2 for x in range(5)]
+# Result: [0, 1, 4, 9, 16]
+```
+
+**With a condition (filtering):**
+
+```python
+evens = [x for x in range(10) if x % 2 == 0]
+# Result: [0, 2, 4, 6, 8]
+```
+
+**Transforming strings:**
+
+```python
+names = ['alice', 'bob', 'charlie']
+capitalized = [name.upper() for name in names]
+# Result: ['ALICE', 'BOB', 'CHARLIE']
+```
+
+**More complex example:**
+
+```python
+# Get lengths of words that start with 'a'
+words = ['apple', 'banana', 'apricot', 'cherry']
+lengths = [len(word) for word in words if word.startswith('a')]
+# Result: [5, 7]
+```
+
+---
+
 ## Lists vs Other Data Types 📊
 
 ### Lists vs Strings
