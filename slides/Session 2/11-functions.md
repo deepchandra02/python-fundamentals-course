@@ -152,6 +152,8 @@ even = is_even(8)             # even = True
 name = get_operation_name("+") # name = "Addition"
 ```
 
+---
+
 ### Functions That Don't Return (Return None)
 
 ```python
@@ -224,6 +226,8 @@ operations = {
 op = "+"
 result = operations[op](10, 5)  # Calls add(10, 5)
 ```
+
+---
 
 ### Functions Calling Other Functions
 
@@ -310,6 +314,8 @@ print(calculate_area.__doc__)
 help(calculate_area)
 ```
 
+---
+
 ### Good Function Names
 
 ```python
@@ -342,6 +348,8 @@ def greet_user(name):
 print(greet_user("John"))  # Works - can access global
 print(message)             # Error - message is local to function
 ```
+
+---
 
 ### Function Parameters Are Local
 
@@ -376,6 +384,8 @@ def get_valid_operation():
             return op
         print("Invalid operation!")
 ```
+
+---
 
 ### Utility Functions
 
