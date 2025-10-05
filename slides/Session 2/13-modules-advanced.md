@@ -158,50 +158,6 @@ def calculate_bmi():
 
 ---
 
-## Lambda Functions: Quick Functions 🏃‍♂️
-
-### What Are Lambda Functions?
-
-- **Anonymous functions** - functions without names
-- **One-line functions** - for simple operations
-- **Perfect for** dictionary values, sorting, filtering
-
-### Lambda Syntax
-
-```python
-# Regular function
-def square(x):
-    return x ** 2
-
-# Lambda function (same thing)
-square = lambda x: x ** 2
-
-# Using in dictionaries
-operations = {
-    "sqrt": lambda x: math.sqrt(x),
-    "square": lambda x: x ** 2,
-    "cube": lambda x: x ** 3
-}
-
-result = operations["sqrt"](25)  # 5.0
-```
-
-### Practical Uses
-
-```python
-# Sort by second element of tuple
-points = [(1, 5), (3, 2), (2, 8)]
-sorted_points = sorted(points, key=lambda point: point[1])
-# [(3, 2), (1, 5), (2, 8)]
-
-# Filter even numbers
-numbers = [1, 2, 3, 4, 5, 6]
-evens = list(filter(lambda x: x % 2 == 0, numbers))
-# [2, 4, 6]
-```
-
----
-
 ## String Formatting: Professional Output ✨
 
 ### F-String Advanced Formatting
@@ -317,6 +273,8 @@ import os
 current_directory = os.getcwd()
 ```
 
+---
+
 ### Third-Party Modules (pip install)
 
 ```python
@@ -354,6 +312,8 @@ from my_calculator import operations
 from my_calculator.utils import format_result
 ```
 
+---
+
 ### Creating Your Own Modules
 
 ```python
@@ -373,49 +333,6 @@ from calculator_utils import safe_float_input, format_currency
 # Use imported functions
 amount = safe_float_input("Enter amount: ")
 print(format_currency(amount))
-```
-
----
-
-## Professional Touches 💎
-
-### Application Header
-
-```python
-def display_banner():
-    print("=" * 60)
-    print("    🧮 PYTHON SCIENTIFIC CALCULATOR v4.0 🧮")
-    print("    Built with Python | Learning Workshop 2024")
-    print("=" * 60)
-
-def display_credits():
-    print("\n" + "="*50)
-    print("🎉 Congratulations! You built a complete calculator!")
-    print("📚 You learned: Variables, Functions, Loops, Error Handling")
-    print("🚀 Next steps: GUI, Web apps, Data science")
-    print("="*50)
-```
-
-### Help System
-
-```python
-def show_help():
-    print("""
-    🆘 CALCULATOR HELP
-
-    Available Operations:
-    + : Addition        - : Subtraction
-    * : Multiplication  / : Division
-    ** : Power          % : Modulo
-
-    Scientific Functions:
-    √ : Square root     sin/cos/tan : Trigonometry
-    ln : Natural log    e^x : Exponential
-
-    Special Features:
-    📋 History tracking  ⚙️ User settings
-    💪 BMI calculator   🌡️ Temperature converter
-    """)
 ```
 
 ---

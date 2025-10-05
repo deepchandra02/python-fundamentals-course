@@ -140,43 +140,6 @@ math.nan     <span class="hljs-comment"># Not a Number</span>
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" lang="en-US">
-<h2 id="lambda-functions-quick-functions-%F0%9F%8F%83%E2%80%8D%E2%99%82%EF%B8%8F">Lambda Functions: Quick Functions <img class="emoji" draggable="false" alt="🏃‍♂️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3c3-200d-2642-fe0f.svg" data-marp-twemoji=""/></h2>
-<h3 id="what-are-lambda-functions">What Are Lambda Functions?</h3>
-<ul>
-<li><strong>Anonymous functions</strong> - functions without names</li>
-<li><strong>One-line functions</strong> - for simple operations</li>
-<li><strong>Perfect for</strong> dictionary values, sorting, filtering</li>
-</ul>
-<h3 id="lambda-syntax">Lambda Syntax</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Regular function</span>
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">square</span>(<span class="hljs-params">x</span>):
-    <span class="hljs-keyword">return</span> x ** <span class="hljs-number">2</span>
-
-<span class="hljs-comment"># Lambda function (same thing)</span>
-square = <span class="hljs-keyword">lambda</span> x: x ** <span class="hljs-number">2</span>
-
-<span class="hljs-comment"># Using in dictionaries</span>
-operations = {
-    <span class="hljs-string">&quot;sqrt&quot;</span>: <span class="hljs-keyword">lambda</span> x: math.sqrt(x),
-    <span class="hljs-string">&quot;square&quot;</span>: <span class="hljs-keyword">lambda</span> x: x ** <span class="hljs-number">2</span>,
-    <span class="hljs-string">&quot;cube&quot;</span>: <span class="hljs-keyword">lambda</span> x: x ** <span class="hljs-number">3</span>
-}
-
-result = operations[<span class="hljs-string">&quot;sqrt&quot;</span>](<span class="hljs-number">25</span>)  <span class="hljs-comment"># 5.0</span>
-</code></pre>
-<h3 id="practical-uses">Practical Uses</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Sort by second element of tuple</span>
-points = [(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>), (<span class="hljs-number">3</span>, <span class="hljs-number">2</span>), (<span class="hljs-number">2</span>, <span class="hljs-number">8</span>)]
-sorted_points = <span class="hljs-built_in">sorted</span>(points, key=<span class="hljs-keyword">lambda</span> point: point[<span class="hljs-number">1</span>])
-<span class="hljs-comment"># [(3, 2), (1, 5), (2, 8)]</span>
-
-<span class="hljs-comment"># Filter even numbers</span>
-numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
-evens = <span class="hljs-built_in">list</span>(<span class="hljs-built_in">filter</span>(<span class="hljs-keyword">lambda</span> x: x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>, numbers))
-<span class="hljs-comment"># [2, 4, 6]</span>
-</code></pre>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" lang="en-US">
 <h2 id="string-formatting-professional-output-%E2%9C%A8">String Formatting: Professional Output <img class="emoji" draggable="false" alt="✨" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2728.svg" data-marp-twemoji=""/></h2>
 <h3 id="f-string-advanced-formatting">F-String Advanced Formatting</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> math
@@ -216,7 +179,7 @@ ratio = <span class="hljs-number">0.856</span>
 <span class="hljs-comment"># <img class="emoji" draggable="false" alt="📊" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4ca.svg" data-marp-twemoji=""/> 1,234.500 + 567.800 = 1,802.300</span>
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" lang="en-US">
 <h2 id="what-we-just-built-%F0%9F%8E%89">What We Just Built <img class="emoji" draggable="false" alt="🎉" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f389.svg" data-marp-twemoji=""/></h2>
 <h3 id="complete-calculator-features">Complete Calculator Features</h3>
 <ul>
@@ -234,7 +197,7 @@ ratio = <span class="hljs-number">0.856</span>
 <li><strong>Built</strong>: Real, usable application</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" lang="en-US">
 <h2 id="quick-exercise-1-minute-%E2%9A%A1">Quick Exercise (1 minute) <img class="emoji" draggable="false" alt="⚡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" data-marp-twemoji=""/></h2>
 <h3 id="your-turn">Your Turn!</h3>
 <ol>
@@ -259,7 +222,7 @@ ratio = <span class="hljs-number">0.856</span>
         <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;<span class="hljs-subst">{temp}</span>°F = <span class="hljs-subst">{result:<span class="hljs-number">.1</span>f}</span>°C&quot;</span>)
 </code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" lang="en-US">
 <h2 id="other-useful-modules-%F0%9F%93%A6">Other Useful Modules <img class="emoji" draggable="false" alt="📦" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4e6.svg" data-marp-twemoji=""/></h2>
 <h3 id="standard-library-modules">Standard Library Modules</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Random numbers</span>
@@ -276,6 +239,8 @@ now = datetime.datetime.now()
 <span class="hljs-keyword">import</span> os
 current_directory = os.getcwd()
 </code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" lang="en-US">
 <h3 id="third-party-modules-pip-install">Third-Party Modules (pip install)</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Data analysis</span>
 <span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
@@ -306,6 +271,8 @@ current_directory = os.getcwd()
 <span class="hljs-keyword">from</span> my_calculator <span class="hljs-keyword">import</span> operations
 <span class="hljs-keyword">from</span> my_calculator.utils <span class="hljs-keyword">import</span> format_result
 </code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" lang="en-US">
 <h3 id="creating-your-own-modules">Creating Your Own Modules</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># File: calculator_utils.py</span>
 <span class="hljs-keyword">def</span> <span class="hljs-title function_">safe_float_input</span>(<span class="hljs-params">prompt</span>):
@@ -323,42 +290,6 @@ current_directory = os.getcwd()
 <span class="hljs-comment"># Use imported functions</span>
 amount = safe_float_input(<span class="hljs-string">&quot;Enter amount: &quot;</span>)
 <span class="hljs-built_in">print</span>(format_currency(amount))
-</code></pre>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" lang="en-US">
-<h2 id="professional-touches-%F0%9F%92%8E">Professional Touches <img class="emoji" draggable="false" alt="💎" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f48e.svg" data-marp-twemoji=""/></h2>
-<h3 id="application-header">Application Header</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">display_banner</span>():
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;=&quot;</span> * <span class="hljs-number">60</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;    <img class="emoji" draggable="false" alt="🧮" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9ee.svg" data-marp-twemoji=""/> PYTHON SCIENTIFIC CALCULATOR v4.0 <img class="emoji" draggable="false" alt="🧮" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9ee.svg" data-marp-twemoji=""/>&quot;</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;    Built with Python | Learning Workshop 2024&quot;</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;=&quot;</span> * <span class="hljs-number">60</span>)
-
-<span class="hljs-keyword">def</span> <span class="hljs-title function_">display_credits</span>():
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\n&quot;</span> + <span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">50</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<img class="emoji" draggable="false" alt="🎉" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f389.svg" data-marp-twemoji=""/> Congratulations! You built a complete calculator!&quot;</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<img class="emoji" draggable="false" alt="📚" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" data-marp-twemoji=""/> You learned: Variables, Functions, Loops, Error Handling&quot;</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<img class="emoji" draggable="false" alt="🚀" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f680.svg" data-marp-twemoji=""/> Next steps: GUI, Web apps, Data science&quot;</span>)
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">50</span>)
-</code></pre>
-<h3 id="help-system">Help System</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">show_help</span>():
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&quot;&quot;
-    <img class="emoji" draggable="false" alt="🆘" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f198.svg" data-marp-twemoji=""/> CALCULATOR HELP
-
-    Available Operations:
-    + : Addition        - : Subtraction
-    * : Multiplication  / : Division
-    ** : Power          % : Modulo
-
-    Scientific Functions:
-    √ : Square root     sin/cos/tan : Trigonometry
-    ln : Natural log    e^x : Exponential
-
-    Special Features:
-    <img class="emoji" draggable="false" alt="📋" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4cb.svg" data-marp-twemoji=""/> History tracking  <img class="emoji" draggable="false" alt="⚙" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2699.svg" data-marp-twemoji=""/> User settings
-    <img class="emoji" draggable="false" alt="💪" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4aa.svg" data-marp-twemoji=""/> BMI calculator   <img class="emoji" draggable="false" alt="🌡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f321.svg" data-marp-twemoji=""/> Temperature converter
-    &quot;&quot;&quot;</span>)
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" lang="en-US">
