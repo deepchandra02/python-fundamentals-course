@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 ---
 
 # Module 3: User Input Magic ✨

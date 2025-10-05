@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 ---
 
 # Module 13: Modules & Advanced Features 🚀
