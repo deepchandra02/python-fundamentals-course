@@ -403,6 +403,219 @@ def is_valid_number(text):
 
 ---
 
+## Lambda Functions: Quick Anonymous Functions 🏃‍♂️
+
+### What Are Lambda Functions?
+
+**Lambda functions** are small, anonymous (unnamed) functions defined with the `lambda` keyword:
+
+- **One-line functions** for simple operations
+- **No function name** required
+- **Single expression** that gets automatically returned
+- **Perfect for** short, throwaway functions
+
+### Lambda Syntax
+
+```python
+lambda arguments : expression
+```
+
+---
+
+## Lambda vs Regular Functions
+
+### Regular Function
+
+```python
+def add(x, y):
+    return x + y
+
+result = add(5, 3)  # 8
+```
+
+### Lambda Function (Same Thing!)
+
+```python
+add = lambda x, y: x + y
+
+result = add(5, 3)  # 8
+```
+
+---
+
+## Lambda Examples 💡
+
+### Simple Lambda Functions
+
+```python
+# Adding 10 to argument
+add_ten = lambda a: a + 10
+print(add_ten(5))  # 15
+
+# Multiplying two numbers
+multiply = lambda a, b: a * b
+print(multiply(5, 6))  # 30
+
+# Summing multiple arguments
+sum_three = lambda a, b, c: a + b + c
+print(sum_three(5, 6, 2))  # 13
+```
+
+---
+
+## Using Lambda in Calculator 🧮
+
+### Calculator Operations with Lambda
+
+```python
+# Store lambda functions in dictionary
+operations = {
+    "add": lambda x, y: x + y,
+    "subtract": lambda x, y: x - y,
+    "multiply": lambda x, y: x * y,
+    "divide": lambda x, y: x / y if y != 0 else "Error",
+    "power": lambda x, y: x ** y,
+    "sqrt": lambda x: x ** 0.5
+}
+
+# Use them
+result = operations["add"](10, 5)      # 15
+result = operations["power"](2, 3)     # 8
+result = operations["sqrt"](25)        # 5.0
+```
+
+---
+
+## Advanced: Lambda Function Generators 🎭
+
+### Creating Specialized Functions Dynamically
+
+```python
+def make_multiplier(n):
+    """Returns a function that multiplies by n"""
+    return lambda x: x * n
+
+# Create specialized functions
+doubler = make_multiplier(2)
+tripler = make_multiplier(3)
+times_ten = make_multiplier(10)
+
+print(doubler(11))    # 22
+print(tripler(11))    # 33
+print(times_ten(5))   # 50
+```
+
+### Calculator Application
+
+```python
+def make_operation(operation_type):
+    """Generate operation functions dynamically"""
+    operations = {
+        "adder": lambda x: lambda y: x + y,
+        "multiplier": lambda x: lambda y: x * y,
+        "power": lambda base: lambda exp: base ** exp
+    }
+    return operations.get(operation_type)
+
+# Create specialized calculators
+add_five = make_operation("adder")(5)
+print(add_five(10))  # 15
+```
+
+---
+
+## When to Use Lambda Functions? 🤔
+
+### ✅ Good Use Cases
+
+- **Dictionary values** for operation lookup
+- **Sorting with custom keys**
+- **Filtering data**
+- **Map operations**
+- **Short, one-time functions**
+
+```python
+# Sorting by custom criteria
+points = [(1, 5), (3, 2), (2, 8)]
+sorted_points = sorted(points, key=lambda point: point[1])
+# [(3, 2), (1, 5), (2, 8)]
+
+# Filtering
+numbers = [1, 2, 3, 4, 5, 6]
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+# [2, 4, 6]
+```
+
+---
+
+### ❌ When NOT to Use Lambda
+
+```python
+# Bad ❌ - Too complex for lambda
+complex_calc = lambda x, y, z: (x + y) * z if z > 0 else (x - y) / z if z < 0 else 0
+
+# Good ✅ - Use regular function for complex logic
+def complex_calculation(x, y, z):
+    if z > 0:
+        return (x + y) * z
+    elif z < 0:
+        return (x - y) / z
+    else:
+        return 0
+```
+
+**Lambda Rule**: If it's not obvious what the function does at a glance, use a regular function!
+
+---
+
+## Lambda in Real Calculator Code 🔬
+
+### Scientific Calculator with Lambda
+
+```python
+import math
+
+scientific_ops = {
+    "sqrt": lambda x: math.sqrt(x),
+    "sin": lambda x: math.sin(math.radians(x)),
+    "cos": lambda x: math.cos(math.radians(x)),
+    "log": lambda x: math.log(x),
+    "exp": lambda x: math.exp(x),
+    "abs": lambda x: abs(x),
+    "square": lambda x: x ** 2,
+    "cube": lambda x: x ** 3
+}
+
+# Use in calculator menu
+operation = "sqrt"
+number = 25
+result = scientific_ops[operation](number)
+print(f"{operation}({number}) = {result}")  # sqrt(25) = 5.0
+```
+
+---
+
+## Lambda Key Takeaways 📚
+
+### What You Learned
+
+- ✅ **Lambda creates anonymous functions** in one line
+- ✅ **Syntax**: `lambda arguments: expression`
+- ✅ **Perfect for simple operations** and dictionary values
+- ✅ **Automatically returns** the expression result
+- ✅ **Great for calculator operation** lookup tables
+
+### Lambda vs Regular Functions
+
+| Lambda | Regular Function |
+|--------|------------------|
+| ✅ One line, simple | ❌ Multiple lines |
+| ✅ No name needed | ✅ Named and reusable |
+| ❌ Single expression only | ✅ Multiple statements |
+| ✅ Quick and concise | ✅ Better for complex logic |
+
+---
+
 ## Function Best Practices 💎
 
 ### Single Responsibility Principle
@@ -436,6 +649,8 @@ def calculate_and_display():
 - **Rule of thumb**: If you can't see entire function on screen, it's too big
 - **Break down** large functions into smaller ones
 - **Each function** should have clear, single purpose
+- **Use lambda** for simple, one-line operations
+- **Use regular functions** for complex logic
 
 ---
 

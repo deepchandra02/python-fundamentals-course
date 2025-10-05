@@ -341,6 +341,198 @@ app_name = <span class="hljs-string">&quot;Calculator&quot;</span>
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" lang="en-US">
+<h2 id="lambda-functions-quick-anonymous-functions-%F0%9F%8F%83%E2%80%8D%E2%99%82%EF%B8%8F">Lambda Functions: Quick Anonymous Functions <img class="emoji" draggable="false" alt="🏃‍♂️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3c3-200d-2642-fe0f.svg" data-marp-twemoji=""/></h2>
+<h3 id="what-are-lambda-functions">What Are Lambda Functions?</h3>
+<p><strong>Lambda functions</strong> are small, anonymous (unnamed) functions defined with the <code>lambda</code> keyword:</p>
+<ul>
+<li><strong>One-line functions</strong> for simple operations</li>
+<li><strong>No function name</strong> required</li>
+<li><strong>Single expression</strong> that gets automatically returned</li>
+<li><strong>Perfect for</strong> short, throwaway functions</li>
+</ul>
+<h3 id="lambda-syntax">Lambda Syntax</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">lambda</span> arguments : expression
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" lang="en-US">
+<h2 id="lambda-vs-regular-functions">Lambda vs Regular Functions</h2>
+<h3 id="regular-function">Regular Function</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">x, y</span>):
+    <span class="hljs-keyword">return</span> x + y
+
+result = add(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)  <span class="hljs-comment"># 8</span>
+</code></pre>
+<h3 id="lambda-function-same-thing">Lambda Function (Same Thing!)</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">add = <span class="hljs-keyword">lambda</span> x, y: x + y
+
+result = add(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)  <span class="hljs-comment"># 8</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" lang="en-US">
+<h2 id="lambda-examples-%F0%9F%92%A1">Lambda Examples <img class="emoji" draggable="false" alt="💡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4a1.svg" data-marp-twemoji=""/></h2>
+<h3 id="simple-lambda-functions">Simple Lambda Functions</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Adding 10 to argument</span>
+add_ten = <span class="hljs-keyword">lambda</span> a: a + <span class="hljs-number">10</span>
+<span class="hljs-built_in">print</span>(add_ten(<span class="hljs-number">5</span>))  <span class="hljs-comment"># 15</span>
+
+<span class="hljs-comment"># Multiplying two numbers</span>
+multiply = <span class="hljs-keyword">lambda</span> a, b: a * b
+<span class="hljs-built_in">print</span>(multiply(<span class="hljs-number">5</span>, <span class="hljs-number">6</span>))  <span class="hljs-comment"># 30</span>
+
+<span class="hljs-comment"># Summing multiple arguments</span>
+sum_three = <span class="hljs-keyword">lambda</span> a, b, c: a + b + c
+<span class="hljs-built_in">print</span>(sum_three(<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">2</span>))  <span class="hljs-comment"># 13</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" lang="en-US">
+<h2 id="using-lambda-in-calculator-%F0%9F%A7%AE">Using Lambda in Calculator <img class="emoji" draggable="false" alt="🧮" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9ee.svg" data-marp-twemoji=""/></h2>
+<h3 id="calculator-operations-with-lambda">Calculator Operations with Lambda</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Store lambda functions in dictionary</span>
+operations = {
+    <span class="hljs-string">&quot;add&quot;</span>: <span class="hljs-keyword">lambda</span> x, y: x + y,
+    <span class="hljs-string">&quot;subtract&quot;</span>: <span class="hljs-keyword">lambda</span> x, y: x - y,
+    <span class="hljs-string">&quot;multiply&quot;</span>: <span class="hljs-keyword">lambda</span> x, y: x * y,
+    <span class="hljs-string">&quot;divide&quot;</span>: <span class="hljs-keyword">lambda</span> x, y: x / y <span class="hljs-keyword">if</span> y != <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;Error&quot;</span>,
+    <span class="hljs-string">&quot;power&quot;</span>: <span class="hljs-keyword">lambda</span> x, y: x ** y,
+    <span class="hljs-string">&quot;sqrt&quot;</span>: <span class="hljs-keyword">lambda</span> x: x ** <span class="hljs-number">0.5</span>
+}
+
+<span class="hljs-comment"># Use them</span>
+result = operations[<span class="hljs-string">&quot;add&quot;</span>](<span class="hljs-number">10</span>, <span class="hljs-number">5</span>)      <span class="hljs-comment"># 15</span>
+result = operations[<span class="hljs-string">&quot;power&quot;</span>](<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)     <span class="hljs-comment"># 8</span>
+result = operations[<span class="hljs-string">&quot;sqrt&quot;</span>](<span class="hljs-number">25</span>)        <span class="hljs-comment"># 5.0</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" lang="en-US">
+<h2 id="advanced-lambda-function-generators-%F0%9F%8E%AD">Advanced: Lambda Function Generators <img class="emoji" draggable="false" alt="🎭" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3ad.svg" data-marp-twemoji=""/></h2>
+<h3 id="creating-specialized-functions-dynamically">Creating Specialized Functions Dynamically</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">make_multiplier</span>(<span class="hljs-params">n</span>):
+    <span class="hljs-string">&quot;&quot;&quot;Returns a function that multiplies by n&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">lambda</span> x: x * n
+
+<span class="hljs-comment"># Create specialized functions</span>
+doubler = make_multiplier(<span class="hljs-number">2</span>)
+tripler = make_multiplier(<span class="hljs-number">3</span>)
+times_ten = make_multiplier(<span class="hljs-number">10</span>)
+
+<span class="hljs-built_in">print</span>(doubler(<span class="hljs-number">11</span>))    <span class="hljs-comment"># 22</span>
+<span class="hljs-built_in">print</span>(tripler(<span class="hljs-number">11</span>))    <span class="hljs-comment"># 33</span>
+<span class="hljs-built_in">print</span>(times_ten(<span class="hljs-number">5</span>))   <span class="hljs-comment"># 50</span>
+</code></pre>
+<h3 id="calculator-application">Calculator Application</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">make_operation</span>(<span class="hljs-params">operation_type</span>):
+    <span class="hljs-string">&quot;&quot;&quot;Generate operation functions dynamically&quot;&quot;&quot;</span>
+    operations = {
+        <span class="hljs-string">&quot;adder&quot;</span>: <span class="hljs-keyword">lambda</span> x: <span class="hljs-keyword">lambda</span> y: x + y,
+        <span class="hljs-string">&quot;multiplier&quot;</span>: <span class="hljs-keyword">lambda</span> x: <span class="hljs-keyword">lambda</span> y: x * y,
+        <span class="hljs-string">&quot;power&quot;</span>: <span class="hljs-keyword">lambda</span> base: <span class="hljs-keyword">lambda</span> exp: base ** exp
+    }
+    <span class="hljs-keyword">return</span> operations.get(operation_type)
+
+<span class="hljs-comment"># Create specialized calculators</span>
+add_five = make_operation(<span class="hljs-string">&quot;adder&quot;</span>)(<span class="hljs-number">5</span>)
+<span class="hljs-built_in">print</span>(add_five(<span class="hljs-number">10</span>))  <span class="hljs-comment"># 15</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" lang="en-US">
+<h2 id="when-to-use-lambda-functions-%F0%9F%A4%94">When to Use Lambda Functions? <img class="emoji" draggable="false" alt="🤔" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f914.svg" data-marp-twemoji=""/></h2>
+<h3 id="%E2%9C%85-good-use-cases"><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> Good Use Cases</h3>
+<ul>
+<li><strong>Dictionary values</strong> for operation lookup</li>
+<li><strong>Sorting with custom keys</strong></li>
+<li><strong>Filtering data</strong></li>
+<li><strong>Map operations</strong></li>
+<li><strong>Short, one-time functions</strong></li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Sorting by custom criteria</span>
+points = [(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>), (<span class="hljs-number">3</span>, <span class="hljs-number">2</span>), (<span class="hljs-number">2</span>, <span class="hljs-number">8</span>)]
+sorted_points = <span class="hljs-built_in">sorted</span>(points, key=<span class="hljs-keyword">lambda</span> point: point[<span class="hljs-number">1</span>])
+<span class="hljs-comment"># [(3, 2), (1, 5), (2, 8)]</span>
+
+<span class="hljs-comment"># Filtering</span>
+numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]
+evens = <span class="hljs-built_in">list</span>(<span class="hljs-built_in">filter</span>(<span class="hljs-keyword">lambda</span> x: x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>, numbers))
+<span class="hljs-comment"># [2, 4, 6]</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" lang="en-US">
+<h3 id="%E2%9D%8C-when-not-to-use-lambda"><img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/274c.svg" data-marp-twemoji=""/> When NOT to Use Lambda</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Bad <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/274c.svg" data-marp-twemoji=""/> - Too complex for lambda</span>
+complex_calc = <span class="hljs-keyword">lambda</span> x, y, z: (x + y) * z <span class="hljs-keyword">if</span> z &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> (x - y) / z <span class="hljs-keyword">if</span> z &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>
+
+<span class="hljs-comment"># Good <img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> - Use regular function for complex logic</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">complex_calculation</span>(<span class="hljs-params">x, y, z</span>):
+    <span class="hljs-keyword">if</span> z &gt; <span class="hljs-number">0</span>:
+        <span class="hljs-keyword">return</span> (x + y) * z
+    <span class="hljs-keyword">elif</span> z &lt; <span class="hljs-number">0</span>:
+        <span class="hljs-keyword">return</span> (x - y) / z
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+</code></pre>
+<p><strong>Lambda Rule</strong>: If it's not obvious what the function does at a glance, use a regular function!</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" lang="en-US">
+<h2 id="lambda-in-real-calculator-code-%F0%9F%94%AC">Lambda in Real Calculator Code <img class="emoji" draggable="false" alt="🔬" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f52c.svg" data-marp-twemoji=""/></h2>
+<h3 id="scientific-calculator-with-lambda">Scientific Calculator with Lambda</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">import</span> math
+
+scientific_ops = {
+    <span class="hljs-string">&quot;sqrt&quot;</span>: <span class="hljs-keyword">lambda</span> x: math.sqrt(x),
+    <span class="hljs-string">&quot;sin&quot;</span>: <span class="hljs-keyword">lambda</span> x: math.sin(math.radians(x)),
+    <span class="hljs-string">&quot;cos&quot;</span>: <span class="hljs-keyword">lambda</span> x: math.cos(math.radians(x)),
+    <span class="hljs-string">&quot;log&quot;</span>: <span class="hljs-keyword">lambda</span> x: math.log(x),
+    <span class="hljs-string">&quot;exp&quot;</span>: <span class="hljs-keyword">lambda</span> x: math.exp(x),
+    <span class="hljs-string">&quot;abs&quot;</span>: <span class="hljs-keyword">lambda</span> x: <span class="hljs-built_in">abs</span>(x),
+    <span class="hljs-string">&quot;square&quot;</span>: <span class="hljs-keyword">lambda</span> x: x ** <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;cube&quot;</span>: <span class="hljs-keyword">lambda</span> x: x ** <span class="hljs-number">3</span>
+}
+
+<span class="hljs-comment"># Use in calculator menu</span>
+operation = <span class="hljs-string">&quot;sqrt&quot;</span>
+number = <span class="hljs-number">25</span>
+result = scientific_ops[operation](number)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;<span class="hljs-subst">{operation}</span>(<span class="hljs-subst">{number}</span>) = <span class="hljs-subst">{result}</span>&quot;</span>)  <span class="hljs-comment"># sqrt(25) = 5.0</span>
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" lang="en-US">
+<h2 id="lambda-key-takeaways-%F0%9F%93%9A">Lambda Key Takeaways <img class="emoji" draggable="false" alt="📚" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" data-marp-twemoji=""/></h2>
+<h3 id="what-you-learned">What You Learned</h3>
+<ul>
+<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Lambda creates anonymous functions</strong> in one line</li>
+<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Syntax</strong>: <code>lambda arguments: expression</code></li>
+<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Perfect for simple operations</strong> and dictionary values</li>
+<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Automatically returns</strong> the expression result</li>
+<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Great for calculator operation</strong> lookup tables</li>
+</ul>
+<h3 id="lambda-vs-regular-functions-1">Lambda vs Regular Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Lambda</th>
+<th>Regular Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> One line, simple</td>
+<td><img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/274c.svg" data-marp-twemoji=""/> Multiple lines</td>
+</tr>
+<tr>
+<td><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> No name needed</td>
+<td><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> Named and reusable</td>
+</tr>
+<tr>
+<td><img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/274c.svg" data-marp-twemoji=""/> Single expression only</td>
+<td><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> Multiple statements</td>
+</tr>
+<tr>
+<td><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> Quick and concise</td>
+<td><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> Better for complex logic</td>
+</tr>
+</tbody>
+</table>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" lang="en-US">
 <h2 id="function-best-practices-%F0%9F%92%8E">Function Best Practices <img class="emoji" draggable="false" alt="💎" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f48e.svg" data-marp-twemoji=""/></h2>
 <h3 id="single-responsibility-principle">Single Responsibility Principle</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># Good <img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> - each function does one thing</span>
@@ -370,11 +562,13 @@ app_name = <span class="hljs-string">&quot;Calculator&quot;</span>
 <li><strong>Rule of thumb</strong>: If you can't see entire function on screen, it's too big</li>
 <li><strong>Break down</strong> large functions into smaller ones</li>
 <li><strong>Each function</strong> should have clear, single purpose</li>
+<li><strong>Use lambda</strong> for simple, one-line operations</li>
+<li><strong>Use regular functions</strong> for complex logic</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" lang="en-US">
 <h2 id="key-takeaways-%F0%9F%93%9A">Key Takeaways <img class="emoji" draggable="false" alt="📚" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" data-marp-twemoji=""/></h2>
-<h3 id="what-you-learned">What You Learned</h3>
+<h3 id="what-you-learned-1">What You Learned</h3>
 <ul>
 <li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Functions organize code</strong> into reusable blocks</li>
 <li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> <strong>Parameters and return values</strong> for input/output</li>
