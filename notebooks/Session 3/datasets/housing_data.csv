@@ -1,0 +1,16 @@
+Address,Bedrooms,Bathrooms,SquareFeet,YearBuilt,Price,Neighborhood,HasGarage,HasPool
+123 Oak St,3,2,1800,2005,285000,Downtown,Yes,No
+456 Elm Ave,4,3,2400,2010,425000,Suburbs,Yes,Yes
+789 Pine Rd,2,1,1200,1995,195000,Downtown,No,No
+321 Maple Dr,5,4,3200,2015,650000,Suburbs,Yes,Yes
+654 Cedar Ln,3,2.5,2000,2008,335000,Midtown,Yes,No
+987 Birch Way,4,3,2600,2012,475000,Suburbs,Yes,Yes
+147 Spruce Ct,2,2,1400,2000,245000,Downtown,Yes,No
+258 Walnut St,3,2,1750,2003,275000,Midtown,No,No
+369 Ash Ave,6,5,4000,2018,890000,Suburbs,Yes,Yes
+741 Beech Dr,3,2,1850,2006,295000,Midtown,Yes,No
+852 Willow Rd,4,3.5,2800,2014,525000,Suburbs,Yes,Yes
+963 Poplar Ln,2,1.5,1300,1998,215000,Downtown,No,No
+159 Hickory Way,5,4,3400,2016,725000,Suburbs,Yes,Yes
+357 Dogwood Ct,3,2,1900,2007,315000,Midtown,Yes,No
+486 Magnolia St,4,3,2500,2011,445000,Suburbs,Yes,No
