@@ -1,0 +1,16 @@
+https://www.w3schools.com/python/numpy/numpy_intro.asp
+https://www.w3schools.com/python/numpy/numpy_getting_started.asp
+https://www.w3schools.com/python/numpy/numpy_creating_arrays.asp
+https://www.w3schools.com/python/numpy/numpy_array_indexing.asp
+https://www.w3schools.com/python/numpy/numpy_array_slicing.asp
+https://www.w3schools.com/python/numpy/numpy_data_types.asp
+https://www.w3schools.com/python/numpy/numpy_copy_vs_view.asp
+https://www.w3schools.com/python/numpy/numpy_array_shape.asp
+https://www.w3schools.com/python/numpy/numpy_array_reshape.asp
+https://www.w3schools.com/python/numpy/numpy_array_iterating.asp
+https://www.w3schools.com/python/numpy/numpy_array_join.asp
+https://www.w3schools.com/python/numpy/numpy_array_split.asp
+https://www.w3schools.com/python/numpy/numpy_array_search.asp
+https://www.w3schools.com/python/numpy/numpy_array_sort.asp
+https://www.w3schools.com/python/numpy/numpy_array_filter.asp
+https://www.w3schools.com/python/numpy/numpy_random_distribution.asp

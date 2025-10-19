@@ -1,0 +1,14 @@
+https://www.w3schools.com/python/pandas/pandas_intro.asp
+https://www.w3schools.com/python/pandas/pandas_getting_started.asp
+https://www.w3schools.com/python/pandas/pandas_series.asp
+https://www.w3schools.com/python/pandas/pandas_dataframes.asp
+https://www.w3schools.com/python/pandas/pandas_csv.asp
+https://www.w3schools.com/python/pandas/pandas_json.asp
+https://www.w3schools.com/python/pandas/pandas_analyzing.asp
+https://www.w3schools.com/python/pandas/pandas_cleaning.asp
+https://www.w3schools.com/python/pandas/pandas_cleaning_empty_cells.asp
+https://www.w3schools.com/python/pandas/pandas_cleaning_wrong_format.asp
+https://www.w3schools.com/python/pandas/pandas_cleaning_wrong_data.asp
+https://www.w3schools.com/python/pandas/pandas_cleaning_duplicates.asp
+https://www.w3schools.com/python/pandas/pandas_correlations.asp
+https://www.w3schools.com/python/pandas/pandas_plotting.asp

@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 ---
 
 # Module 10: Sets & Unique Operations 🎯

@@ -1,0 +1,13 @@
+https://www.w3schools.com/python/matplotlib_intro.asp
+https://www.w3schools.com/python/matplotlib_getting_started.asp
+https://www.w3schools.com/python/matplotlib_pyplot.asp
+https://www.w3schools.com/python/matplotlib_plotting.asp
+https://www.w3schools.com/python/matplotlib_markers.asp
+https://www.w3schools.com/python/matplotlib_line.asp
+https://www.w3schools.com/python/matplotlib_labels.asp
+https://www.w3schools.com/python/matplotlib_grid.asp
+https://www.w3schools.com/python/matplotlib_subplot.asp
+https://www.w3schools.com/python/matplotlib_scatter.asp
+https://www.w3schools.com/python/matplotlib_bars.asp
+https://www.w3schools.com/python/matplotlib_histograms.asp
+https://www.w3schools.com/python/matplotlib_pie_charts.asp

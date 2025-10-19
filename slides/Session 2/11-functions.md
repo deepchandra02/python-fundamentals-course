@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 ---
 
 # Module 11: Functions & Organization 🏗️
@@ -607,12 +607,12 @@ print(f"{operation}({number}) = {result}")  # sqrt(25) = 5.0
 
 ### Lambda vs Regular Functions
 
-| Lambda | Regular Function |
-|--------|------------------|
-| ✅ One line, simple | ❌ Multiple lines |
-| ✅ No name needed | ✅ Named and reusable |
-| ❌ Single expression only | ✅ Multiple statements |
-| ✅ Quick and concise | ✅ Better for complex logic |
+| Lambda                    | Regular Function            |
+| ------------------------- | --------------------------- |
+| ✅ One line, simple       | ❌ Multiple lines           |
+| ✅ No name needed         | ✅ Named and reusable       |
+| ❌ Single expression only | ✅ Multiple statements      |
+| ✅ Quick and concise      | ✅ Better for complex logic |
 
 ---
 
