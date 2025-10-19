@@ -1,0 +1,21 @@
+product_name,category,price,quantity_sold,date
+Laptop,Electronics,899.99,45,2024-01-15
+Mouse,Electronics,24.99,120,2024-01-15
+Desk Chair,Furniture,199.99,30,2024-01-15
+Coffee Maker,Appliances,79.99,55,2024-01-16
+Headphones,Electronics,149.99,80,2024-01-16
+Desk Lamp,Furniture,34.99,65,2024-01-16
+Blender,Appliances,59.99,40,2024-01-17
+Monitor,Electronics,299.99,35,2024-01-17
+Office Desk,Furniture,349.99,20,2024-01-17
+Toaster,Appliances,39.99,70,2024-01-18
+Keyboard,Electronics,79.99,95,2024-01-18
+Bookshelf,Furniture,149.99,25,2024-01-18
+Microwave,Appliances,129.99,50,2024-01-19
+Webcam,Electronics,89.99,60,2024-01-19
+Table,Furniture,249.99,18,2024-01-19
+Air Fryer,Appliances,119.99,45,2024-01-20
+USB Cable,Electronics,12.99,150,2024-01-20
+Filing Cabinet,Furniture,179.99,22,2024-01-20
+Slow Cooker,Appliances,69.99,35,2024-01-21
+Speakers,Electronics,199.99,40,2024-01-21
